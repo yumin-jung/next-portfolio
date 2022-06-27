@@ -6,7 +6,7 @@ const Hero = () => {
         <>
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                    Hi, I'm Yumin Jung {": )"}
+                    Hi, I&apos;m Yumin Jung &#58; &#41;
                 </h1>
                 <p className="mb-8 leading-relaxed">
                     지나고 아름다운 가슴속에 듯합니다. 자랑처럼 이름자를 프랑시스 당신은 가슴속에 것은 다 거외다.
