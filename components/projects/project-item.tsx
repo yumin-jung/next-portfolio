@@ -27,7 +27,7 @@ const ProjectItem = ({ data }: any) => {
                 <h3 className="mt-4 text-xl">{description}</h3>
                 <a href={github}>GitHub Repository</a>
                 <p className="my-1 ">
-                    작업기간 : {start} ~ {end}
+                    {start} ~ {end}
                 </p>
                 <div className="flex items-start mt-2">
                     {tags.map((aTag: any) => (

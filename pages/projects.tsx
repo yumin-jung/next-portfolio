@@ -13,7 +13,7 @@ const Projects: NextPage = ({ projects }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 p-12 m-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-12 pl-3 m-4 gap-8">
         {projects.results.map((aProject: any) => (
           <ProjectItem key={aProject.id} data={aProject} />
         ))}
