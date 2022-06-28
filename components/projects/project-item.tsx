@@ -22,11 +22,11 @@ const ProjectItem = ({ data }: any) => {
                 quality={100}
             />
 
-            <div className="p-4 flex flex-col">
+            <div className="p-5 flex flex-col">
                 <h1 className="text-2xl font-bold">{title}</h1>
-                <h3 className="mt-4 text-xl">{description}</h3>
-                <a href={github}>GitHub Repository</a>
-                <p className="my-1 ">
+                <h3 className="mt-4 text-lg">{description}</h3>
+                <a className="text-base md:text-lg" href={github}>GitHub Repository</a>
+                <p className="my-1 text-xs md:text-sm">
                     {start} ~ {end}
                 </p>
                 <div className="flex items-start mt-2">
@@ -37,7 +37,7 @@ const ProjectItem = ({ data }: any) => {
 
             </div>
 
-        </div>
+        </div >
     );
 }
 

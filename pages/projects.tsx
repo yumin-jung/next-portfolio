@@ -7,16 +7,18 @@ import ProjectItem from "../components/projects/project-item";
 const Projects: NextPage = ({ projects }: any) => {
   return (
     <Layout>
-      <Head>
-        <title>Portfolio</title>
-        <meta name="description" content="portfolio by yumin" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3">
+        <Head>
+          <title>Portfolio</title>
+          <meta name="description" content="portfolio by yumin" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 p-12 px-12 m-4 gap-8">
-        {projects.results.map((aProject: any) => (
-          <ProjectItem key={aProject.id} data={aProject} />
-        ))}
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 p-12 m-4 gap-8">
+          {projects.results.map((aProject: any) => (
+            <ProjectItem key={aProject.id} data={aProject} />
+          ))}
+        </div>
       </div>
     </Layout>
   )
