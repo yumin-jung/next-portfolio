@@ -37,7 +37,7 @@ export async function getStaticProps() {
     body: JSON.stringify({
       sorts: [
         {
-          "timestamp": "created_time",
+          "property": "WorkPeriod",
           "direction": "ascending"
         }
       ],
