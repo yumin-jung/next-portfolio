@@ -13,14 +13,14 @@
 }
 
 .project-card {
-  @apply flex flex-col m-3 rounded-xl w-auto
+  @apply flex flex-col rounded-xl w-auto
           transition duration-300 transform border border-gray-300
           hover:scale-105
           hover:shadow-lg
           hover:text-blue-600
           dark:border-gray-200/50
           dark:hover:shadow-gray-400/40
-          min-w-full
+          m-2
 }
 
 h1, h2, h3, h4, h5, h6 {

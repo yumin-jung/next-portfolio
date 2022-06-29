@@ -7,14 +7,14 @@ import ProjectItem from "../components/projects/project-item";
 const Projects: NextPage = ({ projects }: any) => {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3">
+      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3 pb-10">
         <Head>
           <title>Portfolio</title>
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 p-12 m-4 gap-8">
+        <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8">
           {projects.results.map((aProject: any) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
