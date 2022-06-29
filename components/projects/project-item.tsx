@@ -31,7 +31,7 @@ const ProjectItem = ({ data }: any) => {
                 </p>
                 <div className="flex items-start mt-2">
                     {tags.map((aTag: any) => (
-                        <h1 className="px-2 py-1 mr-2 rounded-md bg-gray-100 dark:bg-slate-600 w-30" key={aTag.id}>{aTag.name}</h1>
+                        <h1 className="px-2 py-1 mr-2 rounded-md bg-gray-100 dark:bg-slate-600 w-30 text-xs" key={aTag.id}>{aTag.name}</h1>
                     ))}
                 </div>
 
