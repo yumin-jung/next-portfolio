@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .bg-primary {
-  @apply bg-white dark:bg-slate-900
+  @apply bg-white dark:bg-[#0D1117]
 }
 
 .btn-project {
-  @apply inline-flex text-white dark:text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg
+  @apply inline-flex text-white dark:text-white bg-gray-500 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg
 }
 
 .project-card {
