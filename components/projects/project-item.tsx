@@ -19,7 +19,7 @@ const ProjectItem = ({ data }: any) => {
                 height="50%"
                 layout="responsive"
                 objectFit="cover"
-                quality={100}
+                quality={50}
             />
 
             <div className="p-5 flex flex-col">
