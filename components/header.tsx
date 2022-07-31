@@ -18,8 +18,8 @@ const Header = () => {
                         <Link href="/projects">
                             <a className="ml-2 mr-2 hover:text-gray-900">Project</a>
                         </Link>
-                        <a href="https://github.com/yumin-jung" className="ml-2 mr-2 hover:text-gray-900">GitHub</a>
-                        <a href="https://medium.com/@yumin-jung" className="ml-2 mr-2 hover:text-gray-900">Blog</a>
+                        <a href="https://github.com/yumin-jung" target="_blank" className="ml-2 mr-2 hover:text-gray-900">GitHub</a>
+                        <a href="https://medium.com/@yumin-jung" target="_blank" className="ml-2 mr-2 hover:text-gray-900">Blog</a>
                     </nav>
                     <DarkModeToggleButton />
                 </div>
