@@ -19,7 +19,7 @@ const Header = () => {
                                 Home
                             </a>
                         </Link>
-                        <Link href="/projects">
+                        <Link href="/project">
                             <a className="ml-2 mr-2 hover:text-gray-900">
                                 Project
                             </a>
