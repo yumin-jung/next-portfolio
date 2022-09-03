@@ -12,7 +12,7 @@ const Hero = () => {
                     Happy hacking!
                 </p>
                 <div className="flex justify-center">
-                    <Link href="/projects">
+                    <Link href="/project">
                         <a className="btn-project">
                             Project
                         </a>
