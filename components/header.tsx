@@ -19,9 +19,9 @@ const Header = () => {
                                 Home
                             </a>
                         </Link>
-                        <Link href="/project">
+                        <Link href="/projects">
                             <a className="ml-2 mr-2 hover:text-gray-900">
-                                Project
+                                Projects
                             </a>
                         </Link>
                         <a href="https://github.com/yumin-jung"
