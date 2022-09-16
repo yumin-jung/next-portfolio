@@ -25,7 +25,7 @@ const ProjectItem = ({ data }: any) => {
             <div className="p-5 flex flex-col">
                 <h1 className="text-2xl font-bold mr-4">{title}</h1>
                 <h3 className="mt-4 text-base">{description}</h3>
-                <a className="text-base md:text-sm" href={github}>GitHub Repo</a>
+                <a className="text-base md:text-sm" href={github}>GitHub Link</a>
                 <p className="my-1 text-xs md:text-xs">
                     {start} ~ {end}
                 </p>
