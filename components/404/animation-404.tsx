@@ -1,8 +1,8 @@
 import React from 'react'
 import Lottie from 'react-lottie-player'
-import lottieJson from '../../public/animation.json'
+import lottieJson from '../../public/animation-404.json'
 
-const Animation = () => {
+const Animation404 = () => {
     return (
         <Lottie
             loop
@@ -12,4 +12,4 @@ const Animation = () => {
     )
 }
 
-export default Animation
+export default Animation404

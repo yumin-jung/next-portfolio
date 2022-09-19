@@ -1,4 +1,4 @@
-import Animation from './animation'
+import AnimationHome from './animation-home'
 import Link from 'next/link'
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <Animation />
+                <AnimationHome />
             </div>
         </>
     )
