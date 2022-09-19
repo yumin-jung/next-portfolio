@@ -13,7 +13,7 @@ const About: NextPage = () => {
         </Head>
 
         <div className="flex">
-          About Me
+          <div>About Me</div>
         </div>
       </div>
     </Layout>
