@@ -21,7 +21,7 @@ const About: NextPage = () => {
               layout="responsive"
               width={500}
               height={500}
-              quality={30}
+              quality={5}
             />
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start py-10 sm:py-4 sm:px-10">
