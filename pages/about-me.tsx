@@ -25,9 +25,21 @@ const About: NextPage = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start py-10 sm:py-4 sm:px-10">
-            <div className="text-sm sm:text-lg">Yumin Jung</div>
-            <div className="text-sm my-2 text-gray-800">Interested in FE / UX / Optimization. </div>
-            <div className="text-2xl sm:text-7xl mb-16">Less is more.</div>
+            <div className="text-xl sm:text-3xl mb-6 mt-10">
+              Yumin Jung
+            </div>
+            <div className="text-sm my-2 mb-4 px-8 sm:px-0">
+              I am a Front-End Engineer based in Republic of Korea.
+            </div>
+            <div className="text-sm my-2 mb-4 px-8 sm:px-0">
+              I describe myself as a passionate developer who loves coding and new technology.
+            </div>
+            <div className="text-sm my-2 mb-8 px-8 sm:px-0">
+              I am interested in Front-End, UX / UI, and Website Optimization.
+            </div>
+            <div className="text-xl sm:text-6xl mb-16">
+              Less is more.
+            </div>
           </div>
         </div>
       </div>
