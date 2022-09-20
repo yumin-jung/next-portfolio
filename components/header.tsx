@@ -39,7 +39,7 @@ const Header = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-2 mr-2 hover:text-gray-900">
-                            Medium
+                            Blog
                         </a>
                     </nav>
                     <DarkModeToggleButton />
