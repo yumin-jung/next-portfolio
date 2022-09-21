@@ -35,7 +35,7 @@ const About: NextPage = () => {
               I describe myself as a passionate developer who loves coding and new technology.
             </div>
             <div className="text-sm my-2 mb-8 px-8 sm:px-0">
-              I am interested in Front-End, UX / UI, and Website Optimization.
+              I am interested in Front-End, UX / UI Design, and Website Optimization.
             </div>
             <div className="text-xl sm:text-6xl mb-16">
               Less is more.
