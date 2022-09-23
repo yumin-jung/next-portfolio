@@ -15,7 +15,7 @@ const About: NextPage = () => {
         </Head>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-16">
-          <div className="w-2/3 m-auto rounded-full overflow-hidden">
+          <div className="mt-2 w-2/3 m-auto rounded-full overflow-hidden">
             <Image
               src={profileImage}
               layout="responsive"
@@ -28,14 +28,14 @@ const About: NextPage = () => {
             <div className="text-xl sm:text-3xl mb-6 mt-10">
               Yumin Jung
             </div>
-            <div className="text-sm my-2 mb-4 px-8 sm:px-0">
-              I am a Front-End Engineer based in Republic of Korea.
+            <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
+              🧑‍💻 I am a Front-End Engineer based in Republic of Korea.
             </div>
-            <div className="text-sm my-2 mb-4 px-8 sm:px-0">
-              I describe myself as a passionate developer who loves coding and new technology.
+            <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
+              🔥 I describe myself as a passionate developer who loves coding and new technology.
             </div>
-            <div className="text-sm my-2 mb-8 px-8 sm:px-0">
-              I am interested in Front-End, UX / UI Design, and Website Optimization.
+            <div className="text-base my-2 mb-8 px-8 text-center sm:px-0">
+              😌 I am interested in Front-End, UX / UI Design, and Website Optimization.
             </div>
             <div className="text-xl sm:text-6xl mb-16">
               Less is more.
