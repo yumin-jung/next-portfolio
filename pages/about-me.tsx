@@ -32,7 +32,7 @@ const About: NextPage = () => {
               🧑‍💻 Front-End Engineer based in Republic of Korea.
             </div>
             <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
-              🔥 I describe myself as a passionate developer who loves coding and new technology.
+              🔥 Passionate developer who loves coding and new technology.
             </div>
             <div className="text-base my-2 mb-8 px-8 text-center sm:px-0">
               😌 Interested in Front-End, UX / UI Design, and Website Optimization.
