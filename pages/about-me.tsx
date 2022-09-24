@@ -26,7 +26,7 @@ const About: NextPage = () => {
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start py-10 sm:py-4 sm:px-10">
             <div className="text-xl sm:text-3xl mb-6 mt-10">
-              Yumin Jung
+              Yumin Jung (Alex)
             </div>
             <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
               🧑‍💻 Front-End Engineer based in Republic of Korea.
