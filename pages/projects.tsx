@@ -9,7 +9,7 @@ const Projects: NextPage = ({ projects }: any) => {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3 pb-10">
         <Head>
-          <title>Projects</title>
+          <title>Yumin - Projects</title>
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
