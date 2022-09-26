@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Yumin - Portfolio</title>
+        <title>Yumin</title>
         <meta name="description" content="portfolio by yumin" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
