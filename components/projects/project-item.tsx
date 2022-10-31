@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const ProjectItem = ({ data }: any) => {
     const title = data.properties.Project.title[0]?.plain_text
