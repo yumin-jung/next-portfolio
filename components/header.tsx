@@ -16,31 +16,25 @@ const Header = () => {
                 </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <Link href="/" className="ml-2 mr-2 hover:text-gray-900">
-                        
-                            Home
-                        
+
+                        Home
+
                     </Link>
                     <Link href="/about-me" className="ml-2 mr-2 hover:text-gray-900">
-                        
-                            About
-                        
+
+                        About
+
                     </Link>
                     <Link href="/projects" className="ml-2 mr-2 hover:text-gray-900">
-                        
-                            Projects
-                        
+
+                        Projects
+
                     </Link>
                     <a href="https://github.com/yumin-jung"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-2 mr-2 hover:text-gray-900">
                         GitHub
-                    </a>
-                    <a href="https://medium.com/@yumin-jung"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-2 mr-2 hover:text-gray-900">
-                        Blog
                     </a>
                 </nav>
                 <DarkModeToggleButton />
