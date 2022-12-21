@@ -27,15 +27,9 @@ const Header = () => {
                     </Link>
                     <Link href="/projects" className="ml-2 mr-2 hover:text-gray-900">
 
-                        Projects
+                        Project
 
                     </Link>
-                    <a href="https://github.com/yumin-jung"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-2 mr-2 hover:text-gray-900">
-                        GitHub
-                    </a>
                 </nav>
                 <DarkModeToggleButton />
             </div>
