@@ -22,10 +22,11 @@ const ProjectItem = ({ data }: any) => {
                 src={imgSrc}
                 alt="cover image"
                 width="100"
-                height="50"
+                height="55"
                 layout="responsive"
                 objectFit="cover"
                 quality={50}
+                priority
             />
 
             <div className="p-5 flex flex-col">
