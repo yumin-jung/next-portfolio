@@ -1,7 +1,10 @@
 import Image from "next/legacy/image";
 
-// interface ProjectDataType = {
-// };
+interface Tag {
+    id: string;
+    name: string;
+    color: string;
+};
 
 const ProjectItem = ({ data }: any) => {
     console.log(data);
@@ -39,8 +42,8 @@ const ProjectItem = ({ data }: any) => {
                     {start} ~ {end}
                 </p>
                 <div className="flex items-start mt-2">
-                    {tags.map((aTag: any) => (
-                        <h1 className="px-2 py-1 mr-2 rounded-md bg-gray-100 dark:bg-slate-600 w-30 text-xs" key={aTag.id}>{aTag.name}</h1>
+                    {tags.map((aTag: Tag) => (
+                        < h1 className="px-2 py-1 mr-2 rounded-md bg-gray-100 dark:bg-slate-600 w-30 text-xs" key={aTag.id} > {aTag.name}</h1>
                     ))}
                 </div>
 
