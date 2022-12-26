@@ -13,7 +13,7 @@ const Footer = () => {
 
                     </Link>
                     <p className="text-sm text-gray-500 sm:mx-3 sm:mt-0 mt-4">
-                        Frontend developer intersted in UX
+                        Frontend Developer
                     </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-5 justify-center sm:justify-start">
                         <a href="https://github.com/yumin-jung"
