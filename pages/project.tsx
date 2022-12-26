@@ -1,10 +1,15 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import { TOKEN, DATABASE_ID } from '../config'
 import ProjectItem from "../components/projects/project-item";
+import type { List } from 'notion-api-types/endpoints/global';
+import type { Page } from 'notion-api-types/responses';
 
-const Projects: NextPage = ({ projects }: any) => {
+interface Projects {
+  projects: List<Page>;
+}
+
+const Projects = ({ projects }: Projects) => {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3 pb-10">
@@ -15,7 +20,7 @@ const Projects: NextPage = ({ projects }: any) => {
         </Head>
 
         <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8">
-          {projects.results.map((aProject: any) => (
+          {projects.results.map((aProject: Page) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
         </div>
