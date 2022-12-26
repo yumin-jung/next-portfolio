@@ -25,11 +25,17 @@ const Header = () => {
                         About
 
                     </Link>
-                    <Link href="/projects" className="ml-2 mr-2 hover:text-gray-900">
+                    <Link href="/project" className="ml-2 mr-2 hover:text-gray-900">
 
                         Project
 
                     </Link>
+                    <a href="https://medium.com/@yumin-jung"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 mr-2 hover:text-gray-900">
+                        Blog
+                    </a>
                 </nav>
                 <DarkModeToggleButton />
             </div>

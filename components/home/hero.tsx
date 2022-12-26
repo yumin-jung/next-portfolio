@@ -12,9 +12,9 @@ const Hero = () => {
             </p>
             <div className="flex justify-center">
                 <Link href="/projects" className="btn-project">
-                    
-                        Projects
-                    
+
+                    Project
+
                 </Link>
             </div>
         </div>

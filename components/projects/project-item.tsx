@@ -1,6 +1,10 @@
 import Image from "next/legacy/image";
 
+// interface ProjectDataType = {
+// };
+
 const ProjectItem = ({ data }: any) => {
+    console.log(data);
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
