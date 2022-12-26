@@ -2,13 +2,12 @@ import Image from "next/legacy/image";
 import type { SelectOptions } from 'notion-api-types/responses/properties/global';
 import type { Page } from 'notion-api-types/responses';
 
-interface dataType {
+interface ProjectItem {
     // type 지정 필요
     data: Page | any;
 }
 
-const ProjectItem = ({ data }: dataType) => {
-    console.log({ data })
+const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
