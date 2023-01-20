@@ -30,7 +30,7 @@ const Header = () => {
                         Project
 
                     </Link>
-                    <a href="https://blog-yumin.vercel.app/"
+                    <a href="https://velog.io/@yumin-jung"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-2 mr-2 hover:text-gray-900">
