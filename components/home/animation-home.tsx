@@ -64,10 +64,14 @@ const AnimationHome: React.FC = () => {
 
         if (!canvasRef.current) return;
 
+        let width = 0;
+        const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
+        window.addEventListener('resize', onResize)
+        onResize()
         createGlobe(canvasRef.current, {
             devicePixelRatio: 2,
-            width: 1000,
-            height: 1000,
+            width: width * 2,
+            height: width * 2,
             phi: 0,
             theta: 0,
             dark: 1,
@@ -83,19 +87,18 @@ const AnimationHome: React.FC = () => {
                 { location: [36.3504119, 127.3845475], size: 0.03 }
             ],
             onRender: (state) => {
-                // This prevents rotation while dragging
-                if (!pointerInteracting) {
-                    // Called on every animation frame.
-                    // `state` will be an empty object, return updated params.
-                    phi += 0.005;
-                }
-                state.phi = phi + pointerInteractionMovement / 200;
+                // Called on every animation frame.
+                // `state` will be an empty object, return updated params.
+                state.phi = phi + r.get()
+                phi += 0.005
+                state.width = width * 2
+                state.height = width * 2
             }
         });
     }, []);
 
     return (
-        <canvas ref={canvasRef} className="w-[500px] h-[500px] aspect-square cursor-grab opacity-1 transition-opacity" />
+        <canvas ref={canvasRef} className="w-full h-full aspect-square cursor-grab transition-opacity" />
     )
 }
 

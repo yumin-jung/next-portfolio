@@ -13,13 +13,11 @@ const Hero = () => {
             </p>
             <div className="flex justify-center">
                 <Link href="/project" className="btn-project">
-
                     Project
-
                 </Link>
             </div>
         </div>
-        <div>
+        <div className="max-w-[500px]">
             <AnimationHome />
         </div>
     </>;
