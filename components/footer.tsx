@@ -7,14 +7,10 @@ const Footer = () => {
                 <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
                     <Link
                         href="/"
-                        className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-
-                        <span className="mx-2 text-l">Yumin</span>
-
+                        className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                    >
+                        <span className="mx-2 text-l">UX Engineer</span>
                     </Link>
-                    <p className="text-sm text-gray-500 sm:mx-3 sm:mt-0 mt-4">
-                        Frontend Developer
-                    </p>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-5 justify-center sm:justify-start">
                         <a href="https://github.com/yumin-jung"
                             target="_blank"
