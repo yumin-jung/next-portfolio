@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.6.1",
     "autoprefixer": "^10.4.13",
+    "cobe": "^0.6.3",
     "dotenv": "^16.0.3",
     "next": "13.0.7",
     "next-themes": "^0.2.1",

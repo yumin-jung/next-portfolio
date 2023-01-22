@@ -1,5 +1,6 @@
-import AnimationHome from './animation-home'
 import Link from 'next/link'
+import dynamic from 'next/dynamic';
+const AnimationHome = dynamic(() => import('./animation-home'));
 
 const Hero = () => {
     return <>
@@ -18,7 +19,7 @@ const Hero = () => {
                 </Link>
             </div>
         </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:mr-15">
+        <div>
             <AnimationHome />
         </div>
     </>;
