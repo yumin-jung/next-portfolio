@@ -28,8 +28,8 @@ const AnimationHome: React.FC = () => {
         const { current: canvas } = canvasRef;
 
         if (!canvas) return;
-        canvas.width = 1000;
-        canvas.height = 1000;
+        canvas.width = 1200;
+        canvas.height = 1200;
 
         canvas.onpointerdown = (e) => {
             pointerInteracting = e.clientX - pointerInteractionMovement;
@@ -113,7 +113,7 @@ const AnimationHome: React.FC = () => {
                     setTimeout(() => {
                         isClicked = false
                         phi = currentPhi - r.get() + 0.005
-                    }, 2000);
+                    }, 1200);
                 } else {
                     state.phi = phi + r.get()
                     currentPhi = state.phi
@@ -133,7 +133,7 @@ const AnimationHome: React.FC = () => {
                 <button className="underline" onClick={() => {
                     isClicked = true
                     focusRef.current = locationToAngles(36.3504119, 127.3845475)
-                }}>Daejeon</button>
+                }}>here</button>
             </div>
             <canvas ref={canvasRef} className="w-full h-full aspect-square cursor-grab transition-opacity" />
         </>

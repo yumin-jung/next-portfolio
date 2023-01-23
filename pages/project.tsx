@@ -12,14 +12,14 @@ interface Projects {
 const Projects = ({ projects }: Projects) => {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3 pb-10">
+      <div className="flex flex-col items-center justify-center min-h-screen px-3 pb-10">
         <Head>
           <title>Yumin - Project</title>
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8">
+        <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8 transition-opacity">
           {projects.results.map((aProject: Page) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
