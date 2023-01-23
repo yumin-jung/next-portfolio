@@ -9,7 +9,7 @@
 }
 
 .bg-primary {
-  @apply bg-gradient-to-r from-[#white] to-[#f5f7ff] dark:from-[#1b1d25] dark:to-[#090a0d]
+  @apply bg-white dark:bg-[#111111]
 }
 
 .btn-project {
