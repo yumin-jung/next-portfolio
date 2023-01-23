@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div className="bg-primary">
+        <div className="bg-primary select-none">
             <Header />
             <div>{children}</div>
             <Footer />
