@@ -96,7 +96,7 @@ const AnimationHome: React.FC = () => {
                 { location: [36.3504119, 127.3845475], size: 0.03 }
             ],
             onRender: (state) => {
-                const [focusPhi, focusTheta] = focusRef.current
+                const [focusPhi, _] = focusRef.current
                 const distPositive = (focusPhi - currentPhi + doublePi) % doublePi
                 const distNegative = (currentPhi - focusPhi + doublePi) % doublePi
                 // Control the speed
@@ -112,9 +112,8 @@ const AnimationHome: React.FC = () => {
                     state.theta = currentTheta
                     setTimeout(() => {
                         isClicked = false
-                        focusRef.current = locationToAngles(phi, 0)
-                        phi = currentPhi + 0.005
-                    }, 1000);
+                        phi = currentPhi - r.get() + 0.005
+                    }, 2000);
                 } else {
                     state.phi = phi + r.get()
                     currentPhi = state.phi
