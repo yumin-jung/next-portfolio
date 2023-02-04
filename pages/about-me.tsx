@@ -30,13 +30,13 @@ const About: NextPage = () => {
               Yumin Jung
             </div>
             <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
-              🧑‍💻 Frontend Developer based in Republic of Korea.
+              🧑‍💻 UX Engineer based in Republic of Korea.
             </div>
             <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
               🔥 Strive for Clean and Structured Code that doesn&apos;t need comments.
             </div>
             <div className="text-base my-2 mb-8 px-8 text-center sm:px-0">
-              😌 Interested in Frontend, User Experience, and Website Optimization.
+              😌 Interested in Frontend, UX, WebGL
             </div>
             <div className="text-xl sm:text-6xl mb-16">
               Less is more.

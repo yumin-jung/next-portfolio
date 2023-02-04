@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import Footer from './footer'
+import DarkModeToggleButton from './dark-mode-toggle-button';
 
 interface LayoutProps {
     children: React.ReactNode;
