@@ -10,9 +10,9 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
     return (
         <div className="bg-primary select-none font-sans antialiased">
-            <Header />
+            {/* <Header /> */}
             <div>{children}</div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

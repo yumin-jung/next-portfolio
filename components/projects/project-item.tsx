@@ -26,7 +26,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
                 height="55"
                 layout="responsive"
                 objectFit="cover"
-                quality={50}
+                quality={75}
                 priority
             />
 

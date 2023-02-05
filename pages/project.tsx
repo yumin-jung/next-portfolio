@@ -4,6 +4,7 @@ import { TOKEN, DATABASE_ID } from '../config'
 import ProjectItem from "../components/projects/project-item";
 import type { List } from 'notion-api-types/endpoints/global';
 import type { Page } from 'notion-api-types/responses';
+import Link from 'next/link'
 
 interface Projects {
   projects: List<Page>;
@@ -18,7 +19,9 @@ const Projects = ({ projects }: Projects) => {
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
+        <Link href="/" className="items-start text-left hover:text-gray-900">
+          Home
+        </Link>
         <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8 transition-opacity">
           {projects.results.map((aProject: Page) => (
             <ProjectItem key={aProject.id} data={aProject} />
