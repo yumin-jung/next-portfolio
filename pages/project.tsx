@@ -18,7 +18,6 @@ const Projects = ({ projects }: Projects) => {
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
         <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8 transition-opacity">
           {projects.results.map((aProject: Page) => (
             <ProjectItem key={aProject.id} data={aProject} />
@@ -58,6 +57,6 @@ export async function getStaticProps() {
 
   return {
     props: { projects },
-    revalidate: 60,
+    revalidate: 30,
   }
 }
