@@ -26,7 +26,8 @@ const ProjectItem = ({ data }: ProjectItem) => {
                 height="55"
                 layout="responsive"
                 objectFit="cover"
-                quality={75}
+                quality={50}
+                priority
             />
 
             <div className="p-4 flex flex-col">
