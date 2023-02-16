@@ -17,6 +17,7 @@ const About: NextPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-16">
           <div className="mt-2 w-2/3 m-auto rounded-full overflow-hidden">
             <Image
+              alt="about-me"
               src={profileImage}
               layout="responsive"
               width={500}
