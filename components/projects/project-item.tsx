@@ -22,11 +22,13 @@ const ProjectItem = ({ data }: ProjectItem) => {
                 className="rounded-t-xl"
                 src={imgSrc}
                 alt="cover image"
-                width="100"
-                height="55"
+                width={100}
+                height={55}
                 layout="responsive"
                 objectFit="cover"
                 quality={50}
+                placeholder="blur"
+                blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFklEQVR42mN8//HLfwYiAOOoQvoqBABbWyZJf74GZgAAAABJRU5ErkJggg=="
                 priority
             />
 
