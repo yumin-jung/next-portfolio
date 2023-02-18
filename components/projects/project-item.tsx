@@ -29,7 +29,6 @@ const ProjectItem = ({ data }: ProjectItem) => {
                 quality={50}
                 placeholder="blur"
                 blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
-                priority
             />
 
             <div className="p-4 flex flex-col">
