@@ -136,45 +136,45 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@react-spring/animated@~9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/animated/-/animated-9.6.1.tgz"
+"@react-spring/animated@~9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.7.1.tgz#0f2d78184ee0cce703acd41abb87ea56765b5713"
   dependencies:
-    "@react-spring/shared" "~9.6.1"
-    "@react-spring/types" "~9.6.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
 
-"@react-spring/core@~9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/core/-/core-9.6.1.tgz"
+"@react-spring/core@~9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/core/-/core-9.7.1.tgz#cfe176a48ee0a05545b1af5f2fbae718b50e9a99"
   dependencies:
-    "@react-spring/animated" "~9.6.1"
-    "@react-spring/rafz" "~9.6.1"
-    "@react-spring/shared" "~9.6.1"
-    "@react-spring/types" "~9.6.1"
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
 
-"@react-spring/rafz@~9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/rafz/-/rafz-9.6.1.tgz"
+"@react-spring/rafz@~9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/rafz/-/rafz-9.7.1.tgz#bdfea463fcb5ddc4e7253a8fa3870dd52ebbc59a"
 
-"@react-spring/shared@~9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.6.1.tgz"
+"@react-spring/shared@~9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/shared/-/shared-9.7.1.tgz#29611bb63d0c9e1ac18b6ced7aa4db1d48d136f3"
   dependencies:
-    "@react-spring/rafz" "~9.6.1"
-    "@react-spring/types" "~9.6.1"
+    "@react-spring/rafz" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
 
-"@react-spring/types@~9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.6.1.tgz"
+"@react-spring/types@~9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.7.1.tgz#b540752a479d210c6fb68d2b1d5ff35556df4308"
 
-"@react-spring/web@^9.6.1":
-  version "9.6.1"
-  resolved "https://registry.npmjs.org/@react-spring/web/-/web-9.6.1.tgz"
+"@react-spring/web@^9.7.1":
+  version "9.7.1"
+  resolved "https://registry.yarnpkg.com/@react-spring/web/-/web-9.7.1.tgz#a9ee730d06c686b8432cd20f41683b1acb9b6300"
   dependencies:
-    "@react-spring/animated" "~9.6.1"
-    "@react-spring/core" "~9.6.1"
-    "@react-spring/shared" "~9.6.1"
-    "@react-spring/types" "~9.6.1"
+    "@react-spring/animated" "~9.7.1"
+    "@react-spring/core" "~9.7.1"
+    "@react-spring/shared" "~9.7.1"
+    "@react-spring/types" "~9.7.1"
 
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.3"
