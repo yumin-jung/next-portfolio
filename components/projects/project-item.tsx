@@ -12,6 +12,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
     const imgSrc = data.cover.file?.url || data.cover.external?.url
+    const grayImgSrc = "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
@@ -21,7 +22,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
             <div className="project-cover-image">
                 <Image
                     className="rounded-t-xl"
-                    src={imgSrc}
+                    src={imgSrc ?? grayImgSrc}
                     alt="cover image"
                     width={100}
                     height={55}
