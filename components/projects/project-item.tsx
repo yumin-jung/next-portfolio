@@ -11,25 +11,27 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const imgSrc = data.cover.file?.url || data.cover.external.url
+    const imgSrc = data.cover.file?.url || data.cover.external?.url
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
 
     return (
         <div className="project-card">
-            <Image
-                className="rounded-t-xl"
-                src={imgSrc}
-                alt="cover image"
-                width={100}
-                height={55}
-                layout="responsive"
-                objectFit="cover"
-                quality={50}
-                placeholder="blur"
-                blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
-            />
+            <div className="project-cover-image">
+                <Image
+                    className="rounded-t-xl"
+                    src={imgSrc}
+                    alt="cover image"
+                    width={100}
+                    height={55}
+                    layout="responsive"
+                    objectFit="cover"
+                    quality={50}
+                    placeholder="blur"
+                    blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
+                />
+            </div>
 
             <div className="p-4 flex flex-col">
                 <h1 className="text-2xl font-bold mr-4">{title}</h1>
