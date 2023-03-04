@@ -1,6 +1,7 @@
 import Image from "next/legacy/image";
 import type { SelectOptions } from 'notion-api-types/responses/properties/global';
 import type { Page } from 'notion-api-types/responses';
+import { useState } from "react";
 
 interface ProjectItem {
     // type 지정 필요
@@ -11,7 +12,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const imgSrc = data.cover.file?.url || data.cover.external?.url
+    const [imgSrc, setSrc] = useState(data.cover.file?.url || data.cover.external?.url);
     const grayImgSrc = "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
@@ -22,8 +23,9 @@ const ProjectItem = ({ data }: ProjectItem) => {
             <div className="project-cover-image">
                 <Image
                     className="rounded-t-xl"
-                    src={imgSrc ?? grayImgSrc}
-                    alt="cover image"
+                    src={imgSrc}
+                    alt="Project Cover Image"
+                    onError={() => setSrc(grayImgSrc)}
                     width={100}
                     height={55}
                     layout="responsive"
