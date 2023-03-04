@@ -8,7 +8,7 @@ const PageNotFound: NextPage = () => {
         <Layout>
             <div className="flex flex-col items-center justify-center min-h-screen mb-10 px-3">
                 <Head>
-                    <title>Yumin - 404</title>
+                    <title>404 - Yumin</title>
                     <meta name="description" content="portfolio by yumin" />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>

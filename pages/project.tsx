@@ -14,7 +14,7 @@ const Projects = ({ projects }: Projects) => {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-3 pb-10">
         <Head>
-          <title>Yumin - Project</title>
+          <title>Project - Yumin</title>
           <meta name="description" content="portfolio by yumin" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
