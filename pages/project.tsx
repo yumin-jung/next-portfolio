@@ -56,6 +56,7 @@ export async function getStaticProps() {
   const projects = await res.json()
 
   return {
-    props: { projects }
+    props: { projects },
+    revalidate: 10
   }
 }
