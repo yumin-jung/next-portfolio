@@ -1,7 +1,6 @@
 import Image from "next/legacy/image";
 import type { SelectOptions } from 'notion-api-types/responses/properties/global';
 import type { Page } from 'notion-api-types/responses';
-import { useState } from "react";
 
 interface ProjectItem {
     // type 지정 필요
@@ -16,19 +15,22 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
+    const defaultImgSrc = "https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
 
     return (
         <div className="project-card">
             <div className="project-cover-image">
                 <Image
                     className="rounded-t-xl"
-                    src={imgSrc}
+                    src={imgSrc ?? defaultImgSrc}
                     alt="Project Cover Image"
                     width={100}
                     height={55}
                     layout="responsive"
                     objectFit="cover"
                     quality={30}
+                    placeholder="blur"
+                    blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
                 />
             </div>
 
