@@ -30,9 +30,10 @@ const ProjectItem = ({ data }: ProjectItem) => {
                     }}
                     width={100}
                     height={55}
+                    priority
                     layout="responsive"
                     objectFit="cover"
-                    quality={50}
+                    quality={30}
                     placeholder="blur"
                     blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
                 />
