@@ -12,8 +12,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const [imgSrc, setSrc] = useState(data.cover.file?.url || data.cover.external?.url);
-    const grayImgSrc = "https://images.unsplash.com/photo-1536566482680-fca31930a0bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+    const imgSrc = data.cover.file?.url || data.cover.external.url
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
@@ -25,17 +24,11 @@ const ProjectItem = ({ data }: ProjectItem) => {
                     className="rounded-t-xl"
                     src={imgSrc}
                     alt="Project Cover Image"
-                    onError={() => {
-                        setSrc(grayImgSrc);
-                    }}
                     width={100}
                     height={55}
-                    priority
                     layout="responsive"
                     objectFit="cover"
                     quality={30}
-                    placeholder="blur"
-                    blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
                 />
             </div>
 
