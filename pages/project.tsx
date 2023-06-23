@@ -30,7 +30,7 @@ const Projects = ({ projects }: Projects) => {
 
 export default Projects
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   const options = {
     method: 'POST',
