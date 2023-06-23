@@ -55,7 +55,13 @@ export async function getServerSideProps() {
 
   const projects = await res.json()
 
-  return {
-    props: { projects }
+  if (res.ok) {
+    return {
+      props: { projects }
+    }
+  } else {
+    return {
+      props: {},
+    };
   }
 }
