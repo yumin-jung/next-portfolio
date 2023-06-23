@@ -1,6 +1,7 @@
 import Image from "next/legacy/image";
 import type { SelectOptions } from 'notion-api-types/responses/properties/global';
 import type { Page } from 'notion-api-types/responses';
+import { useState } from "react";
 
 interface ProjectItem {
     // type 지정 필요
@@ -11,19 +12,20 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0]?.plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const imgSrc = data.cover.file?.url || data.cover.external.url
+    const [imgSrc, setSrc] = useState(data.cover.file?.url || data.cover.external?.url);
+    const starImgSrc = "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/UkQ4O3-Kfwg"
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
-    const defaultImgSrc = "https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
 
     return (
         <div className="project-card">
             <div className="project-cover-image">
                 <Image
                     className="rounded-t-xl"
-                    src={imgSrc ?? defaultImgSrc}
+                    src={imgSrc}
                     alt="Project Cover Image"
+                    onError={() => setSrc(starImgSrc)}
                     width={100}
                     height={55}
                     layout="responsive"
