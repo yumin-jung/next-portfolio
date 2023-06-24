@@ -30,7 +30,7 @@ const Projects = ({ projects }: Projects) => {
 
 export default Projects
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const options = {
     method: 'POST',
@@ -55,13 +55,12 @@ export async function getServerSideProps() {
 
   const projects = await res.json()
 
-  if (res.ok) {
-    return {
-      props: { projects }
-    }
-  } else {
-    return {
-      props: {},
-    };
+  if (!res.ok) {
+    throw new Error(`Failed to fetch posts, received status ${res.status}`)
+  }
+
+  return {
+    props: { projects },
+    revalidate: 10
   }
 }
