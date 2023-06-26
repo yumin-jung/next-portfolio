@@ -28,8 +28,6 @@ const Projects = ({ projects }: Projects) => {
   )
 }
 
-export default Projects
-
 export async function getServerSideProps() {
 
   const options = {
@@ -55,11 +53,9 @@ export async function getServerSideProps() {
 
   const projects = await res.json()
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch posts, received status ${res.status}`)
-  }
-
   return {
     props: { projects }
   }
 }
+
+export default Projects

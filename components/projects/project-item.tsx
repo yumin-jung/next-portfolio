@@ -9,10 +9,10 @@ interface ProjectItem {
 }
 
 const ProjectItem = ({ data }: ProjectItem) => {
-    const title = data.properties.Project.title[0]?.plain_text
+    const title = data.properties.Project.title[0].plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const [imgSrc, setSrc] = useState(data.cover.file?.url || data.cover.external?.url);
+    const [imgSrc, setSrc] = useState(data.cover.file!.url);
     const starImgSrc = "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/UkQ4O3-Kfwg"
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
@@ -24,13 +24,12 @@ const ProjectItem = ({ data }: ProjectItem) => {
                 <Image
                     className="rounded-t-xl"
                     src={imgSrc}
-                    alt="Project Cover Image"
+                    alt="Image"
                     onError={() => setSrc(starImgSrc)}
                     width={100}
                     height={55}
                     layout="responsive"
                     objectFit="cover"
-                    quality={30}
                     placeholder="blur"
                     blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
                 />
