@@ -19,7 +19,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-lottie-player": "^1.5.4",
-    "sharp": "^0.32.1"
+    "sharp": "^0.32.4"
   },
   "devDependencies": {
     "@types/node": "18.14.2",
