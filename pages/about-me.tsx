@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/layout'
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 import profileImage from '../public/profile.jpeg'
+import Link from 'next/link'
 
 const About: NextPage = () => {
   return (
@@ -28,7 +29,13 @@ const About: NextPage = () => {
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start py-10 sm:py-4 sm:px-10">
             <div className="text-xl sm:text-3xl mb-6 mt-10">
-              Yumin Jung
+              Yumin Jung&nbsp;
+              <Link className="text-base underline"
+                href={"./resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                locale={false}
+              >CV</Link>
             </div>
             <div className="text-base my-2 mb-4 px-8 text-center sm:px-0">
               🧑‍💻 UX Engineer based in Republic of Korea.
