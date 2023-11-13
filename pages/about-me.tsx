@@ -31,7 +31,7 @@ const About: NextPage = () => {
             <div className="text-xl sm:text-3xl mb-6 mt-10">
               Yumin Jung&nbsp;
               <Link className="text-base underline"
-                href={"./portfolio-231109.pdf"}
+                href={"./portfolio-231113.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
