@@ -38,7 +38,7 @@ const About: NextPage = () => {
               >Portfolio</Link>
               &nbsp;
               <Link className="text-base underline"
-                href={"./resume-231109.pdf"}
+                href={"./resume-231120.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
