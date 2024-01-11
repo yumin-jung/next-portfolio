@@ -31,14 +31,14 @@ const About: NextPage = () => {
             <div className="text-xl sm:text-3xl mb-6 mt-10">
               Yumin Jung&nbsp;
               <Link className="text-base underline"
-                href={"./portfolio-231113.pdf"}
+                href={"./portfolio-240111.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
               >Portfolio</Link>
               &nbsp;
               <Link className="text-base underline"
-                href={"./resume-231218.pdf"}
+                href={"./resume-240111.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
