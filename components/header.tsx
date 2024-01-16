@@ -30,12 +30,12 @@ const Header = () => {
                         Project
 
                     </Link>
-                    <a href="https://velog.io/@yumin-jung"
+                    {/* <a href="https://velog.io/@yumin-jung"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-2 mr-2 hover:text-gray-900">
                         Blog
-                    </a>
+                    </a> */}
                 </nav>
                 <DarkModeToggleButton />
             </div>
