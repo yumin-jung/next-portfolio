@@ -42,7 +42,7 @@ export async function getServerSideProps() {
       sorts: [
         {
           "property": "WorkPeriod",
-          "direction": "ascending"
+          "direction": "descending"
         }
       ],
       page_size: 100
