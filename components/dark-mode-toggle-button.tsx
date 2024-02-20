@@ -5,12 +5,13 @@ const DarkModeToggleButton = () => {
     return (
         <>
             <button
+                id='dark-mode-toggle-button'
                 className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none ml-2 mr-2
                 hover:bg-gray-50 hover:text-orange-400 
                 dark:bg-slate-600/20 dark:text-gray-400 dark:hover:bg-slate-600/30 dark:hover:text-yellow-300 
                 rounded text-base mt-4 md:mt-0"
                 type="button"
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                onClick={() => setTheme(theme === 'dark' || theme === 'system' ? 'light' : 'dark')}
             >
                 <svg xmlns="http://www.w3.org/2000/svg"
                     className="visible dark:invisible dark:h-0 dark:w-0 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

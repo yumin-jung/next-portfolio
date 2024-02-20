@@ -35,7 +35,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
             </div>
 
             <div className="p-4 flex flex-col">
-                <h1 className="text-2xl font-bold mr-4">{title}</h1>
+                <h2 className="text-2xl font-bold mr-4">{title}</h2>
                 <h3 className="mt-4 text-base">{description}</h3>
                 <a className="text-base md:text-sm"
                     href={github}
