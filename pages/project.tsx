@@ -4,6 +4,7 @@ import { TOKEN, DATABASE_ID } from '../config'
 import ProjectItem from "../components/projects/project-item";
 import type { List } from 'notion-api-types/endpoints/global';
 import type { Page } from 'notion-api-types/responses';
+import { Suspense } from 'react'
 
 interface Projects {
   projects: List<Page>;
@@ -19,9 +20,11 @@ const Projects = ({ projects }: Projects) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className="grid grid-cols-1 align-middle lg:grid-cols-4 md:grid-cols-2 p-10 m-4 gap-8 transition-opacity">
-          {projects.results.map((aProject: Page) => (
-            <ProjectItem key={aProject.id} data={aProject} />
-          ))}
+          <Suspense fallback={<p>Loading...</p>}>
+            {projects.results.map((aProject: Page) => (
+              <ProjectItem key={aProject.id} data={aProject} />
+            ))}
+          </Suspense>
         </div>
       </div>
     </Layout>
