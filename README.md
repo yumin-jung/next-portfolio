@@ -7,8 +7,8 @@
 ```bash
 git clone git@github.com:yumin-jung/next-portfolio.git
 cd next-portfolio
-npm i
-npm run dev
+yarn
+yarn dev
 ```
 
 ## Reference
