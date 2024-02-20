@@ -1,7 +1,8 @@
+'use client'
+
 import Image from "next/legacy/image";
 import type { SelectOptions } from 'notion-api-types/responses/properties/global';
 import type { Page } from 'notion-api-types/responses';
-import { useState } from "react";
 
 interface ProjectItem {
     // type 지정 필요
@@ -12,8 +13,6 @@ const ProjectItem = ({ data }: ProjectItem) => {
     const title = data.properties.Project.title[0].plain_text
     const github = data.properties.GitHub.url
     const description = data.properties.Description.rich_text[0].plain_text
-    const [imgSrc, setSrc] = useState(data.cover.file!.url);
-    const starImgSrc = "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/UkQ4O3-Kfwg"
     const tags = data.properties.Tags.multi_select
     const start = data.properties.WorkPeriod.date.start
     const end = data.properties.WorkPeriod.date.end
@@ -23,9 +22,9 @@ const ProjectItem = ({ data }: ProjectItem) => {
             <div className="project-cover-image">
                 <Image
                     className="rounded-t-xl"
-                    src={imgSrc}
+                    src={data.cover.file!.url}
                     alt="Image"
-                    onError={() => setSrc(starImgSrc)}
+                    priority
                     width={100}
                     height={55}
                     layout="responsive"
