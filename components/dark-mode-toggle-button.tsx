@@ -6,6 +6,7 @@ const DarkModeToggleButton = () => {
         <>
             <button
                 id='dark-mode-toggle-button'
+                aria-label="DarkModeToggleButton"
                 className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none ml-2 mr-2
                 hover:bg-gray-50 hover:text-orange-400 
                 dark:bg-slate-600/20 dark:text-gray-400 dark:hover:bg-slate-600/30 dark:hover:text-yellow-300 

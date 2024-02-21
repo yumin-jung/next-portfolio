@@ -12,7 +12,9 @@ const Footer = () => {
                         <span className="mx-2 text-l">UX Engineer</span>
                     </Link>
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-5 justify-center sm:justify-start">
-                        <Link href="https://github.com/yumin-jung"
+                        <Link
+                            href="https://github.com/yumin-jung"
+                            aria-label="GitHub"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-500">
