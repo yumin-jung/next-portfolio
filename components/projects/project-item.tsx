@@ -24,7 +24,7 @@ const ProjectItem = ({ data }: ProjectItem) => {
                     className="rounded-t-xl"
                     src={data.cover.file!.url}
                     alt="Image"
-                    priority
+                    priority={true}
                     width={100}
                     height={55}
                     layout="responsive"
