@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import Image from "next/legacy/image"
-import profileImage from '../public/profile.jpeg'
+import profileImage from '../public/profile-black-min-748.jpeg'
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 const About: NextPage = () => {
   return (
@@ -17,15 +18,19 @@ const About: NextPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:mx-16">
           <div className="mt-2 w-2/3 m-auto rounded-full overflow-hidden">
-            <Image
-              alt="about-me"
-              src={profileImage}
-              layout="responsive"
-              width={500}
-              height={500}
-              quality={50}
-              priority
-            />
+            <Suspense fallback={<p>Loading...</p>}>
+              <Image
+                alt="about-me"
+                src={profileImage}
+                layout="responsive"
+                width={500}
+                height={500}
+                quality={50}
+                priority={true}
+                placeholder="blur"
+                blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNs+A8AAgUBgQvw1B0AAAAASUVORK5CYII="
+              />
+            </Suspense>
           </div>
           <div className="flex flex-col items-center justify-center sm:items-start py-10 sm:py-4 sm:px-10">
             <div className="text-xl sm:text-3xl mb-6 mt-10">
